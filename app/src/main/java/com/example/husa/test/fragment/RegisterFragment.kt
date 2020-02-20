@@ -15,7 +15,7 @@ import android.view.LayoutInflater
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import com.example.husa.test.databinding.FragmentLoginBinding
-
+//2.0
 //1.0  -2nd commit
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
