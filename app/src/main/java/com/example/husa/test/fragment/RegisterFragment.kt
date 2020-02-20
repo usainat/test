@@ -26,14 +26,14 @@ private const val ARG_PARAM2 = "param2"
  * A simple [Fragment] subclass.
  *
  */
-class LoginFragment : Fragment() ,LoginActivityCallback{
+class RegisterFragment : Fragment() ,LoginActivityCallback{
    var binding: FragmentLoginBinding? = null
 
     //  private var activityLoginBinding: FragmentLoginBinding?=null
     override fun onLoginClick(view: View) {
 
     }
-// new branch
+
     override fun onRegisterClick(view: View) {
 
     }

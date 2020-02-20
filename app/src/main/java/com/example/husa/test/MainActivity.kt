@@ -3,6 +3,7 @@ package com.example.husa.test
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
+import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
@@ -11,6 +12,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.example.husa.test.constant.FragmentNames
 import com.example.husa.test.fragment.LoginFragment
+import com.example.husa.test.fragment.RegisterFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -47,7 +49,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         replacefragment(fragment, mCurrentFragment)
     }
 
-    private fun replacefragment(fragment: LoginFragment, mCurrentFragment: String) {
+    private fun replacefragment(fragment: Fragment, mCurrentFragment: String) {
         val fTrans = fManager!!.beginTransaction()
         // fTrans.setCustomAnimations(R.anim.right_enter, R.anim.left_exit, R.anim.left_in, R.anim.right_out)
         fTrans.replace(R.id.content_hom, fragment, mCurrentFragment)
